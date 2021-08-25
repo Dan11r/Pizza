@@ -10,8 +10,8 @@ const PizzaBlock = ({price, imageUrl, name, types, sizes}) => {
     const switchType = (i) =>{
         setActiveType(i)
     }
-    const switchSize = (i) =>{
-        setActiveSize(i)
+    const switchSize = (s) =>{
+        setActiveSize(s)
     }
     return (
         <div className="pizza-block">
@@ -30,9 +30,9 @@ const PizzaBlock = ({price, imageUrl, name, types, sizes}) => {
                 </ul>
                 <ul>
                     {availableSizes.map((s, i) => <li key={s}  className={classNames({
-                        'active': i === activeSize,
+                        'active': s === activeSize,
                         'disabled': !sizes.includes(s)
-                    })} onClick={() =>{switchSize(i)}}>{s} см.</li>)}
+                    })} onClick={() =>{switchSize(s)}}>{s} см.</li>)}
                 </ul>
             </div>
             <div className="pizza-block__bottom">

@@ -1,21 +1,32 @@
 import {useEffect, useState} from 'react'
+import {useDispatch} from "react-redux";
+
 import {Header, SortPopup, Categories} from "./components";
 import Home from './pages/Home'
 import Cart from './pages/Cart'
+
 import {Route, Switch, Redirect} from "react-router-dom"
 import axios from 'axios'
 
+import {fetchPizzas, setPizzas} from './redux/actions/Pizzas'
+
+
+
 function App() {
-  const [pizzas, setPizzas] = useState([])
+  const dispatch = useDispatch()
+  window.test = function (){
+    axios.get('http://localhost:3001/pizzas').then(res => dispatch(setPizzas(res.data)))
+  }
+
   useEffect( () => {
-    axios.get('http://localhost:3000/db.json').then(res => setPizzas(res.data))
+    dispatch(fetchPizzas())
   },[])
   return (
       <div className="wrapper">
         <Header/>
   <div className="content">
     <Switch>
-      <Route path={'/home'} render={() => <Home pizzas={pizzas.pizzas}/>} exact/>
+      <Route path={'/home'} component={Home} exact/>
       <Route path={'/cart'} component={Cart} exact/>
       <Redirect to={'/home'}/>
     </Switch>
