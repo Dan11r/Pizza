@@ -1,12 +1,15 @@
 import React from 'react';
+import {useDispatch, useSelector} from "react-redux";
+import {setSortBy} from '../redux/actions/Filter'
 
-const Sortpopup = React.memo(({items}) => {
-        const [activeItem, setActiveItem] = React.useState(0)
+const Sortpopup = React.memo(({items, activeItem}) => {
+    const dispatch = useDispatch()
         const [visiblePopup, setVisiblePopup] = React.useState(false)
         const SortRef = React.useRef(null)
-        const activeSort = items[activeItem]
-        const onLiClick = (i) => {
-            setActiveItem(i)
+        const activeSort = items.find((item)=> item.type === activeItem)
+
+        const onLiClick = (type, order) => {
+            dispatch(setSortBy({type, order}))
             setVisiblePopup(false)
         }
         const toggleVisiblePopup = () => {
@@ -40,13 +43,13 @@ const Sortpopup = React.memo(({items}) => {
                         />
                     </svg>
                     <b>Сортировка по:</b>
-                    <span onClick={toggleVisiblePopup}>{activeSort}</span>
+                    <span onClick={toggleVisiblePopup}>{activeSort.name}</span>
                 </div>
                 {visiblePopup && <div className="sort__popup">
                     <ul>
-                        {items && items.map((categ, index) => <li onClick={() => onLiClick(index)}
-                                                                  className={activeItem === index ? 'active' : ''}
-                                                                  key={categ}>{categ}</li>)}
+                        {items && items.map((categ, index) => <li onClick={() => onLiClick(categ.type, categ.order)}
+                                                                  className={activeItem === items.type ? 'active' : ''}
+                                                                  key={categ.type}>{categ.name}</li>)}
                     </ul>
                 </div>}
             </div>

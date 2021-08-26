@@ -1,6 +1,6 @@
 
 const initState = {
-    PizzasItems : [],
+    pizzasItems : [],
     isLoading : false
 }
 
@@ -9,7 +9,7 @@ const PizzasReducers = (state= initState, action) => {
         case 'SET-PIZZAS':
             return{
                 ...state,
-                PizzasItems: action.payload
+                pizzasItems: action.payload
             }
         case  'SET-IS-LOADING':
             return {

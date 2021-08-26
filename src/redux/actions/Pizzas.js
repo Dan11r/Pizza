@@ -8,8 +8,10 @@ export const isloading = (payload) =>({
   type: 'SET-IS-LOADING',
   payload
 })
-export const fetchPizzas = () => (dispatch) =>{
+export const fetchPizzas = (category, sortBy, order) => async (dispatch) =>{
   dispatch(isloading(true))
-    axios.get('http://localhost:3001/pizzas').then(res => dispatch(setPizzas(res.data)))
+    let data = await axios.get(`http://localhost:3001/pizzas${category !== null ? '?category=' + category + '&':'?'}_sort=${sortBy}&_order=${order}`).then(res => res.data)
+    dispatch(setPizzas(data))
+  //http://localhost:3001/pizzas?category=3&_sort=rating&_order=asc
   dispatch(isloading(false))
 }

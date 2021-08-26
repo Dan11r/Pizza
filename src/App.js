@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 import {Header, SortPopup, Categories} from "./components";
 import Home from './pages/Home'
@@ -13,14 +13,16 @@ import {fetchPizzas, setPizzas} from './redux/actions/Pizzas'
 
 
 function App() {
+  const [category, sortBy, order] = useSelector(state => [state.filter.category, state.filter.sortBy, state.filter.order])
+  console.log(category, sortBy, order)
   const dispatch = useDispatch()
   window.test = function (){
     axios.get('http://localhost:3001/pizzas').then(res => dispatch(setPizzas(res.data)))
   }
 
   useEffect( () => {
-    dispatch(fetchPizzas())
-  },[])
+    dispatch(fetchPizzas(category, sortBy, order))
+  },[category, sortBy, order])
   return (
       <div className="wrapper">
         <Header/>
