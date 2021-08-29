@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 
 import classNames from 'classnames'
+import {useDispatch} from "react-redux";
+import {setPizza} from "../redux/actions/Cart";
+import Button from './Button'
 
-const PizzaBlock = ({price, imageUrl, name, types, sizes}) => {
+const PizzaBlock = ({price, imageUrl, name, types, sizes, id, pizzasInCart}) => {
+    console.log(pizzasInCart)
     const [activeType, setActiveType] = React.useState(types[0])
     const [activeSize, setActiveSize] = React.useState(sizes[0])
+    const dispatch = useDispatch()
+    const handleButtonClick = useCallback((name, id, price, activeType, activeSize, imageUrl) => {
+        dispatch(setPizza({name, id, price, type: activeType === 0 ? 'тонокое' : 'традиционное', size : activeSize, imageUrl}))
+    })
     const availableTypes = ['тонкое' , 'традиционное']
     const availableSizes = [26 , 30, 40]
     const switchType = (i) =>{
@@ -13,6 +21,7 @@ const PizzaBlock = ({price, imageUrl, name, types, sizes}) => {
     const switchSize = (s) =>{
         setActiveSize(s)
     }
+
     return (
         <div className="pizza-block">
             <img
@@ -37,7 +46,10 @@ const PizzaBlock = ({price, imageUrl, name, types, sizes}) => {
             </div>
             <div className="pizza-block__bottom">
                 <div className="pizza-block__price">от {price} ₽</div>
-                <div className="button button--outline button--add">
+                <Button onClick={() => handleButtonClick(name ,id, price, activeType, activeSize, imageUrl)}
+                        className={classNames('button', 'button--outline',{
+                           'button--add':pizzasInCart
+                        })} >
                     <svg
                         width="12"
                         height="12"
@@ -50,9 +62,9 @@ const PizzaBlock = ({price, imageUrl, name, types, sizes}) => {
                             fill="white"
                         />
                     </svg>
-                    <span>Добавить</span>
-                    <i>2</i>
-                </div>
+                    <span >Добавить</span>
+                    <i>{pizzasInCart && pizzasInCart.length}</i>
+                </Button>
             </div>
         </div>
     );

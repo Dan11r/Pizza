@@ -14,7 +14,6 @@ import {fetchPizzas, setPizzas} from './redux/actions/Pizzas'
 
 function App() {
   const [category, sortBy, order] = useSelector(state => [state.filter.category, state.filter.sortBy, state.filter.order])
-  console.log(category, sortBy, order)
   const dispatch = useDispatch()
   window.test = function (){
     axios.get('http://localhost:3001/pizzas').then(res => dispatch(setPizzas(res.data)))
