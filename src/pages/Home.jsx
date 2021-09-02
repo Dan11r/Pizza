@@ -1,7 +1,6 @@
-import React, {useCallback} from 'react';
+import React from 'react';
 import {Categories, PizzaBlock, SortPopup, LoaderPizzaBlock} from "../components";
-import {useDispatch, useSelector} from "react-redux";
-import {setPizza} from '../redux/actions/Cart'
+import {useSelector} from "react-redux";
 
 const availableCategories = ['Мясные','Вегетарианская','Гриль','Острые','Закрытые']
 const availableSorts = [{type:'rating', name:'популярности', order:'desc'},{type:'price', name:'цене', order:'desc'},{type:'name', name:'алфавиту', order:'asc'}]
@@ -21,7 +20,7 @@ const Home = React.memo(() => {
             <div className="content__items">
                 {pizzasIsLoading
                     ? Array(10).fill(0).map((LoaderPizza, index) => <LoaderPizzaBlock key={index}/> )
-                    : pizzasItems && pizzasItems.map(p => <PizzaBlock  pizzasInCart={items && items[p.id]} key={p.id} {...p}/>)
+                    : pizzasItems && pizzasItems.map(p => <PizzaBlock  pizzasInCart={items[p.id] && items[p.id].totalCount} key={p.id} {...p}/>)
                 }
             </div>
         </div>

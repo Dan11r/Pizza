@@ -12,7 +12,8 @@ const PizzaBlock = ({price, imageUrl, name, types, sizes, id, pizzasInCart}) => 
     const dispatch = useDispatch()
     const handleButtonClick = useCallback((name, id, price, activeType, activeSize, imageUrl) => {
         dispatch(setPizza({name, id, price, type: activeType === 0 ? 'тонокое' : 'традиционное', size : activeSize, imageUrl}))
-    })
+        // eslint-disable-next-line
+    },[])
     const availableTypes = ['тонкое' , 'традиционное']
     const availableSizes = [26 , 30, 40]
     const switchType = (i) =>{
@@ -63,7 +64,7 @@ const PizzaBlock = ({price, imageUrl, name, types, sizes, id, pizzasInCart}) => 
                         />
                     </svg>
                     <span >Добавить</span>
-                    <i>{pizzasInCart && pizzasInCart.length}</i>
+                    <i>{pizzasInCart && pizzasInCart}</i>
                 </Button>
             </div>
         </div>

@@ -1,7 +1,7 @@
-import {useEffect, useState} from 'react'
+import {useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux";
 
-import {Header, SortPopup, Categories} from "./components";
+import {Header} from "./components";
 import Home from './pages/Home'
 import Cart from './pages/Cart'
 
@@ -21,6 +21,7 @@ function App() {
 
   useEffect( () => {
     dispatch(fetchPizzas(category, sortBy, order))
+    // eslint-disable-next-line
   },[category, sortBy, order])
   return (
       <div className="wrapper">
