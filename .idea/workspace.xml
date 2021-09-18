@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c7d3591-6897-4544-89e4-c57a47133811" name="Default Changelist" comment="">
+    <list default="true" id="0c7d3591-6897-4544-89e4-c57a47133811" name="Default Changelist" comment="khbjhsdvergerg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/Pizzas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/Pizzas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +69,7 @@
       <updated>1631958937900</updated>
       <workItem from="1631958940831" duration="1740000" />
       <workItem from="1631960724182" duration="1765000" />
-      <workItem from="1631962802424" duration="316000" />
+      <workItem from="1631962802424" duration="1028000" />
     </task>
     <task id="LOCAL-00001" summary="деплой">
       <created>1631959781380</created>
@@ -121,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631962417179</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="khbjhsdvergerg">
+      <created>1631963168175</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631963168175</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +140,7 @@
     <MESSAGE value="khbjh" />
     <MESSAGE value="khbjhsdv" />
     <MESSAGE value="khbjhsdverg" />
-    <option name="LAST_COMMIT_MESSAGE" value="khbjhsdverg" />
+    <MESSAGE value="khbjhsdvergerg" />
+    <option name="LAST_COMMIT_MESSAGE" value="khbjhsdvergerg" />
   </component>
 </project>
