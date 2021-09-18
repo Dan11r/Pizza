@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0c7d3591-6897-4544-89e4-c57a47133811" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpackDevServer.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
     <property name="ts.external.directory.path" value="C:\Users\HP\Desktop\pizza-shop\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.eject">
     <configuration name="eject" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -42,8 +43,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.eject" />
       </list>
     </recent_temporary>
@@ -57,7 +69,8 @@
       <option name="presentableId" value="Default" />
       <updated>1631958937900</updated>
       <workItem from="1631958940831" duration="1740000" />
-      <workItem from="1631960724182" duration="1663000" />
+      <workItem from="1631960724182" duration="1765000" />
+      <workItem from="1631962802424" duration="316000" />
     </task>
     <task id="LOCAL-00001" summary="деплой">
       <created>1631959781380</created>
@@ -101,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631962235803</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="khbjhsdverg">
+      <created>1631962417179</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631962417179</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +133,7 @@
     <MESSAGE value="installed jsonServer" />
     <MESSAGE value="khbjh" />
     <MESSAGE value="khbjhsdv" />
-    <option name="LAST_COMMIT_MESSAGE" value="khbjhsdv" />
+    <MESSAGE value="khbjhsdverg" />
+    <option name="LAST_COMMIT_MESSAGE" value="khbjhsdverg" />
   </component>
 </project>
