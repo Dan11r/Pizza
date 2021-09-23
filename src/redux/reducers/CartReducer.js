@@ -20,9 +20,15 @@ const CartReducer = (state = initState, action) => {
             draft.items[action.id].totalPrice = draft.items[action.id] ? draft.items[action.id].pizza
                  .reduce((num, obj) => obj.price + num, 0) : action.price
             draft.totalCount = draft.totalCount + 1
-            draft.totalPrice = [].concat.apply([], Object.values(Object.values(draft.items))) // надо брать ключи и сними уже что то делать
-                       .reduce((num, obj) => obj.price + num, 0)
-        }})
+            draft.totalPrice = [].concat.apply([], Object.values((draft.items)) )// надо брать ключи и сними уже что то делать
+                       .reduce((num, obj) => obj.totalPrice + num, 0)
+        }
+        else if(action.type === 'CLEAR-CART'){
+            draft.items = {}
+            draft.totalCount = 0
+            draft.totalPrice = 0
+        }
+    })
 
     // switch (action.type) {
     //     case 'SET-PIZZA': {

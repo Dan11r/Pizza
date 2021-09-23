@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c7d3591-6897-4544-89e4-c57a47133811" name="Default Changelist" comment="khbjhsdvergerg">
+    <list default="true" id="a496bed3-7f3a-4ccd-91e4-e48c9cc31801" name="Default Changelist" comment="дабавление в карзину и ее отчистка">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/Pizzas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/Pizzas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddedPizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddedPizzas.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/CartReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/CartReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1yJ9goylKPgqgNyaWCtD8wrgu0U" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1yRtquno7UTp63fHgQ0HfHLJVfd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,21 +28,11 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\HP\Desktop\pizza-shop\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.eject">
-    <configuration name="eject" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="eject" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -55,92 +46,29 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.eject" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0c7d3591-6897-4544-89e4-c57a47133811" name="Default Changelist" comment="" />
-      <created>1631958937900</created>
+      <changelist id="a496bed3-7f3a-4ccd-91e4-e48c9cc31801" name="Default Changelist" comment="" />
+      <created>1632226426232</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1631958937900</updated>
-      <workItem from="1631958940831" duration="1740000" />
-      <workItem from="1631960724182" duration="1765000" />
-      <workItem from="1631962802424" duration="1028000" />
+      <updated>1632226426232</updated>
+      <workItem from="1632226429202" duration="1695000" />
+      <workItem from="1632228179763" duration="919000" />
+      <workItem from="1632245058650" duration="1764000" />
+      <workItem from="1632246969503" duration="594000" />
+      <workItem from="1632251571357" duration="594000" />
+      <workItem from="1632284342225" duration="1712000" />
+      <workItem from="1632286126624" duration="1769000" />
+      <workItem from="1632383373831" duration="1183000" />
     </task>
-    <task id="LOCAL-00001" summary="деплой">
-      <created>1631959781380</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1631959781380</updated>
-    </task>
-    <task id="LOCAL-00002" summary="jhgjhv">
-      <created>1631960139144</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1631960139144</updated>
-    </task>
-    <task id="LOCAL-00003" summary="installed jsonServer">
-      <created>1631961221213</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1631961221213</updated>
-    </task>
-    <task id="LOCAL-00004" summary="khbjh">
-      <created>1631961507352</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1631961507352</updated>
-    </task>
-    <task id="LOCAL-00005" summary="khbjh">
-      <created>1631961566003</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1631961566003</updated>
-    </task>
-    <task id="LOCAL-00006" summary="khbjhsdv">
-      <created>1631962235803</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1631962235803</updated>
-    </task>
-    <task id="LOCAL-00007" summary="khbjhsdverg">
-      <created>1631962417179</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1631962417179</updated>
-    </task>
-    <task id="LOCAL-00008" summary="khbjhsdvergerg">
-      <created>1631963168175</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1631963168175</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="деплой" />
-    <MESSAGE value="jhgjhv" />
-    <MESSAGE value="installed jsonServer" />
-    <MESSAGE value="khbjh" />
-    <MESSAGE value="khbjhsdv" />
-    <MESSAGE value="khbjhsdverg" />
-    <MESSAGE value="khbjhsdvergerg" />
-    <option name="LAST_COMMIT_MESSAGE" value="khbjhsdvergerg" />
   </component>
 </project>

@@ -1,10 +1,21 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {AddedPizzas} from '../components';
+import {useDispatch, useSelector} from "react-redux";
+import {clearCart} from "../redux/actions/Cart";
 
 
 const Cart = () => {
-
+const {items, totalCount, totalPrice} = useSelector(state => state.cart)
+    const addedPizzas = Object.keys(items).map((el) => {
+        return {...items[el].pizza[0]}
+    })
+    const dispatch = useDispatch()
+    const clear = () =>{
+        if (window.confirm('Вы действительно хотите отчистить корзину')){
+            dispatch(clearCart())
+        }
+    }
     return (
         <div className="content">
             <div className="container container--cart">
@@ -39,16 +50,19 @@ const Cart = () => {
                                       strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
 
-                            <span>Очистить корзину</span>
+                            <span onClick={clear}>Очистить корзину</span>
                         </div>
                     </div>
                     <div className="content__items">
-                        <AddedPizzas/>
+                        {addedPizzas.map((p, i) => <AddedPizzas key={p + i} name={p.name}
+                            type={p.PizzaType} size={p.size} price={items[p.id].totalPrice}
+                                                             totalCount={items[p.id].totalCount}
+                        />)}
                     </div>
                     <div className="cart__bottom">
                         <div className="cart__bottom-details">
-                            <span> Всего пицц: <b>3 шт.</b> </span>
-                            <span> Сумма заказа: <b>900 ₽</b> </span>
+                            <span> Всего пицц: <b>{totalCount || 0} шт.</b> </span>
+                            <span> Сумма заказа: <b>{totalPrice || 0} ₽</b> </span>
                         </div>
                         <div className="cart__bottom-buttons">
                             <Link to='/' className="button button--outline button--add go-back-btn">

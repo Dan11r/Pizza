@@ -7,5 +7,7 @@ export const setPizza = (payload) =>({
     PizzaType:payload.type,
     size:payload.size,
     url: payload.imageUrl
-
+})
+export const clearCart = () =>({
+    type: 'CLEAR-CART',
 })
