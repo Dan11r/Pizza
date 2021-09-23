@@ -16,7 +16,7 @@ function App() {
   const [category, sortBy, order] = useSelector(state => [state.filter.category, state.filter.sortBy, state.filter.order])
   const dispatch = useDispatch()
   window.test = function (){
-    axios.get('http://localhost:3000/pizzas').then(res => dispatch(setPizzas(res.data)))
+    axios.get('http://localhost:3001/pizzas').then(res => dispatch(setPizzas(res.data)))
   }
 
   useEffect( () => {
