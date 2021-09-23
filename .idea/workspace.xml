@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a496bed3-7f3a-4ccd-91e4-e48c9cc31801" name="Default Changelist" comment="дабавление в карзину и ее отчистка">
+    <list default="true" id="a496bed3-7f3a-4ccd-91e4-e48c9cc31801" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AddedPizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddedPizzas.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
@@ -32,7 +32,17 @@
     <property name="ts.external.directory.path" value="C:\Users\HP\Desktop\pizza-shop\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="server" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -45,6 +55,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.server" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -64,11 +75,32 @@
       <workItem from="1632251571357" duration="594000" />
       <workItem from="1632284342225" duration="1712000" />
       <workItem from="1632286126624" duration="1769000" />
-      <workItem from="1632383373831" duration="1183000" />
+      <workItem from="1632383373831" duration="1729000" />
+      <workItem from="1632413440744" duration="330000" />
+      <workItem from="1632416015090" duration="1128000" />
+      <workItem from="1632417190702" duration="661000" />
+      <workItem from="1632419843820" duration="594000" />
+      <workItem from="1632422338979" duration="1716000" />
+      <workItem from="1632424207731" duration="1465000" />
+      <workItem from="1632426022446" duration="1758000" />
+      <workItem from="1632427851375" duration="1711000" />
+      <workItem from="1632429656715" duration="1564000" />
     </task>
+    <task id="LOCAL-00001" summary="дабавление в корзину и ее отчистка">
+      <created>1632384599505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632384599505</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="дабавление в корзину и ее отчистка" />
+    <option name="LAST_COMMIT_MESSAGE" value="дабавление в корзину и ее отчистка" />
   </component>
 </project>

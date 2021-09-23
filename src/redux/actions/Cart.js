@@ -11,3 +11,15 @@ export const setPizza = (payload) =>({
 export const clearCart = () =>({
     type: 'CLEAR-CART',
 })
+export const removePizzaItem = (payload) =>({
+    type: 'REMOVE-PIZZA-ITEM',
+    payload
+})
+export const plusPizzaItem = (payload) =>({
+    type: 'PLUS-PIZZA-ITEM',
+    payload
+})
+export const minusPizzaItem = (payload) =>({
+    type: 'MINUS-PIZZA-ITEM',
+    payload
+})
