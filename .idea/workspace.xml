@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a496bed3-7f3a-4ccd-91e4-e48c9cc31801" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/CartReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddedPizzas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddedPizzas.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Categories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/Cart.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/CartReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +39,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Desktop\pizza-shop\src" />
       <recent name="C:\Users\HP\Desktop\pizza-shop" />
     </key>
   </component>
@@ -90,7 +96,15 @@
       <workItem from="1632426022446" duration="1758000" />
       <workItem from="1632427851375" duration="1711000" />
       <workItem from="1632429656715" duration="1893000" />
-      <workItem from="1632433069683" duration="189000" />
+      <workItem from="1632433069683" duration="918000" />
+      <workItem from="1632509182057" duration="1845000" />
+      <workItem from="1632590456506" duration="1385000" />
+      <workItem from="1632592321365" duration="1761000" />
+      <workItem from="1632594511469" duration="595000" />
+      <workItem from="1632596701462" duration="1760000" />
+      <workItem from="1632598535595" duration="1757000" />
+      <workItem from="1632600474930" duration="1759000" />
+      <workItem from="1632602300339" duration="1011000" />
     </task>
     <task id="LOCAL-00001" summary="дабавление в корзину и ее отчистка">
       <created>1632384599505</created>
@@ -106,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632431460135</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="erg">
+      <created>1632433397224</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632433397224</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="дабавление в корзину и ее отчистка" />
     <MESSAGE value="удаление всех пицц из корзины, удаление определенных пицц, добавление и удаление пицц в корзине по одной" />
-    <option name="LAST_COMMIT_MESSAGE" value="удаление всех пицц из корзины, удаление определенных пицц, добавление и удаление пицц в корзине по одной" />
+    <MESSAGE value="erg" />
+    <option name="LAST_COMMIT_MESSAGE" value="erg" />
   </component>
 </project>

@@ -2,10 +2,15 @@ import React from 'react';
 import {useDispatch} from "react-redux";
 import {setСategory} from '../redux/actions/Filter'
 
+interface categoriesType {
+    items: string[]
+    activeItem: number
+}
 
-const Categories = React.memo(({items, activeItem}) => {
+
+const Categories: React.FC<categoriesType> = React.memo(({items, activeItem}) => {
     const dispatch = useDispatch()
-    const onLiClick = index =>{
+    const onLiClick = (index: null | number):void=>{
         dispatch(setСategory(index))
     }
     return (

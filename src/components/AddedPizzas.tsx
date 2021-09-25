@@ -2,7 +2,16 @@ import React from 'react';
 import {minusPizzaItem, plusPizzaItem, removePizzaItem} from "../redux/actions/Cart";
 import {useDispatch} from "react-redux";
 
-const AddedPizzas = ({id, name, type, size, price, totalCount}) => {
+interface pizzaType {
+    id: number
+    name: string
+    type: string
+    size: number
+    price:number
+    totalCount: number
+}
+
+const AddedPizzas: React.FC<pizzaType> = ({id, name, type, size, price, totalCount}):React.ReactElement => {
     const dispatch = useDispatch()
     const removeItems = () =>{
         if(window.confirm('удалить эти пиццы?')){
